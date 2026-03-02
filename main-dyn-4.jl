@@ -133,7 +133,7 @@ fig = plot(
             subset(df, :variable => ByRow(==(mode))),
             x       = :t,
             y       = :value,
-            mode    = "lines",
+            mode    = "lines+markers",
             name    = modes[mode],
             visible = mode == mode_order[1],
         ) for mode in mode_order
